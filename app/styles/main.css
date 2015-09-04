@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Comfortaa);
+body {
+  background-color: #6441A5;
+  text-rendering: optimizeLegibility;
+  vertical-align: top;
+}
+
+h2 {
+  display: inline-block;
+}
+
+.container {
+  width: 60%;
+  margin-top: 25px;
+}
+
+#grand-title,
+#grand-subtitle {
+  color: #6441A5;
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+}
+
+#grand-title {
+  color: white;
+  font-size: 6vw;
+  text-shadow: 1px 1px 0 #6441A5, -1px 1px 0 #6441A5, 1px -1px 0 #6441A5, -1px -1px 0 #6441A5, 0px 1px 0 #6441A5, 0px -1px 0 #6441A5, -1px 0px 0 #6441A5, 1px 0px 0 #6441A5, 2px 2px 0 #6441A5, -2px 2px 0 #6441A5, 2px -2px 0 #6441A5, -2px -2px 0 #6441A5, 0px 2px 0 #6441A5, 0px -2px 0 #6441A5, -2px 0px 0 #6441A5, 2px 0px 0 #6441A5, 1px 2px 0 #6441A5, -1px 2px 0 #6441A5, 1px -2px 0 #6441A5, -1px -2px 0 #6441A5, 2px 1px 0 #6441A5, -2px 1px 0 #6441A5, 2px -1px 0 #6441A5, -2px -1px 0 #6441A5;
+}
+
+#grand-subtitle {
+  font-size: 3vw;
+}
+
+#input-container {
+  padding: 10px;
+  position: relative;
+}
+
+input {
+  padding: 5px;
+  font-size: 1.1em;
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #A9A9A9;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid #639FDC;
+}
+
+.ui-tooltip {
+  color: #6441A5;
+  font-family: 'Comfortaa', cursive;
+}
+
+a {
+  color: #6441A5;
+}
+
+a:hover {
+  color: #e5c100;
+  text-decoration: none;
+}
+
+.show-online {
+  list-style-image: url('http://i.imgur.com/AXEJmRi.png');
+}
+
+.show-offline {
+  list-style-image: url('http://i.imgur.com/MsWeKJt.png');
+}
+
+.show-inactive {
+  list-style-image: url('http://i.imgur.com/oq22JKF.png');
+}
+
+@media screen and (max-width: 700px) {
+  input {
+    font-size: 3vw;
+  }
+  h2 {
+    font-size: 3vw;
+  }
+  .container {
+    width: 80%;
+  }
+  #grand-title {
+    font-size: 7vw;
+    text-align: center;
+  }
+  #grand-subtitle {
+    font-size: 3.5vw;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .nav {
+    font-size: 2.3vw;
+  }
+  .container {
+    width: 90%;
+  }
+  input {
+    font-size: 1em;
+    padding: 2px;
+  }
+}
